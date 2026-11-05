@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>We were there when the market opened</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="glass-cards.css">
+</head>
+<body>
+
+  <!-- Figma: Website-Exploration, "Block 36" (383:1674) -->
+  <section class="gc-block" aria-labelledby="gc-title">
+
+    <div class="gc-copy">
+      <h2 class="gc-title" id="gc-title">We were there when the<br><span class="gc-accent">market opened</span></h2>
+      <p class="gc-body">Wyzia has worked with Canada’s iGaming regulators since the first provincial market launched in 2022. Since then we’ve helped operators make the move from unregulated to regulated environments, and we’ve done it enough times to know where the process stalls.</p>
+    </div>
+
+    <h3 class="gc-heading" id="gc-heading">What we handle</h3>
+
+    <!-- Curved carousel. The <ul> is the real content (and the no-WebGL fallback);
+         when WebGL is available the cards are painted into the canvas instead. -->
+    <div class="gc-stage" data-gc="stage" tabindex="0" role="region" aria-labelledby="gc-heading">
+      <canvas class="gc-gl" data-gc="canvas" aria-hidden="true"></canvas>
+      <ul class="gc-track" data-gc="track">
+        <li class="gc-card">
+          <img src="assets/file-earmark-text.svg" alt="" width="32" height="32" draggable="false">
+          <p>Registration as a gaming-related supplier in each province</p>
+        </li>
+        <li class="gc-card">
+          <img src="assets/sliders.svg" alt="" width="32" height="32" draggable="false">
+          <p>Controls built to each regulator’s standards for AML, responsible gambling and player protection</p>
+        </li>
+        <li class="gc-card">
+          <img src="assets/shield-check.svg" alt="" width="32" height="32" draggable="false">
+          <p>Reporting and records that satisfy both the provincial regulator and FINTRAC</p>
+        </li>
+      </ul>
+    </div>
+
+    <a class="gc-btn" href="#regulatory-framework"><span>Our regulatory framework</span></a>
+  </section>
+
+  <script src="glass-cards.js"></script>
+</body>
+</html>
